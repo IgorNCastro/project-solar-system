@@ -1,3 +1,122 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap') ;
+
+body {
+  background-image: url('./images/Space.jpg');
+  background-size: 1400px;
+  color: antiquewhite;
+  font-family: Montserrat , sans-serif;
+  font-size: 25px;
   text-align: center;
+}
+
+h2 {
+  margin: 70px;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+}
+
+.planets-list {
+  display: flex;
+  max-width: 100%;
+}
+
+.planets {
+  align-items: center;
+  animation: float 7s ease-in-out infinite;
+  display: flex;
+  flex-direction: column;
+}
+
+.Mercúrio .image {
+  width: 50px;
+}
+
+.Vênus .image {
+  width: 100px;
+}
+
+.Vênus {
+  animation-delay: 1s;
+}
+
+.Terra .image {
+  max-width: 120px;
+}
+
+.Terra {
+  animation-delay: 2s;
+}
+
+.Marte .image {
+  max-width: 90px;
+}
+
+.Marte {
+  animation-delay: 3s;
+}
+
+.Júpiter .image {
+  max-width: 300px;
+}
+
+.Júpiter {
+  animation-delay: 4s;
+}
+
+.Saturno .image {
+  max-width: 300px;
+}
+
+.Saturno {
+  animation-delay: 5s;
+}
+
+.Urano .image {
+  max-width: 130px;
+}
+
+.Urano {
+  animation-delay: 6s;
+}
+
+.Netuno .image {
+  max-width: 130px;
+}
+
+.Netuno {
+  animation-delay: 7s;
+}
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.missions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.missions-list {
+  border: 2px solid antiquewhite;
+  border-radius: 10%;
+  display: flex;
+  margin: 10px;
+  max-width: 100%;
+  padding: 20px;
 }
